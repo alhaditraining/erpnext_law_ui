@@ -1,0 +1,25 @@
+{% extends "templates/web.html" %}
+
+{% block title %}Law Office Login{% endblock %}
+
+{% block page_content %}
+<div class="law-login-wrapper">
+    <div class="law-login-card">
+        <div class="law-login-header">
+            <h1>Law Office Management</h1>
+            <p>Sign in to access your legal operations dashboard.</p>
+        </div>
+
+        <form class="law-login-form" method="post" action="/api/method/login">
+            <input type="hidden" name="cmd" value="login">
+            <label for="login_email">Email</label>
+            <input id="login_email" type="text" name="usr" placeholder="name@lawfirm.com" required>
+
+            <label for="login_password">Password</label>
+            <input id="login_password" type="password" name="pwd" placeholder="••••••••" required>
+
+            <button type="submit" class="btn btn-primary law-login-button">Sign In</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

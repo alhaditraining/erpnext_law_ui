@@ -1,0 +1,68 @@
+:root {
+    --law-primary: #1f3a5f;
+    --law-accent: #9f7a2d;
+    --law-bg: #f4f6fb;
+    --law-text: #1f2933;
+}
+
+.law-login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--law-bg), #ffffff);
+    padding: 1.5rem;
+}
+
+.law-login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.12);
+    padding: 2rem;
+}
+
+.law-login-header h1 {
+    color: var(--law-primary);
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.law-login-header p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.law-login-form {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.law-login-form label {
+    color: var(--law-text);
+    font-weight: 600;
+}
+
+.law-login-form input {
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    padding: 0.75rem 0.9rem;
+}
+
+.law-login-form input:focus {
+    outline: 2px solid color-mix(in srgb, var(--law-accent) 25%, white);
+    border-color: var(--law-accent);
+}
+
+.law-login-button {
+    margin-top: 0.75rem;
+    background: var(--law-primary);
+    border-color: var(--law-primary);
+}
+
+.law-login-button:hover,
+.law-login-button:focus {
+    background: #152a45;
+    border-color: #152a45;
+}
