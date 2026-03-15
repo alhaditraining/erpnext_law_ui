@@ -1,17 +1,26 @@
-# erpnext_law_ui
-# ERPNext Law System
+# ERPNext Law UI
 
-A Legal Office Management System built on ERPNext.
+Custom UI layer for ERPNext Law Office Management System.
 
-Modules:
-- Client Management
-- Legal Services
-- Case Projects
-- Lawyer Tasks
-- Client Document Portal
+This app customizes the ERPNext interface for legal offices.
 
-Tech Stack:
-- ERPNext
+## Features
+
+- Custom Login Page
+- Lawyer Dashboard
+- Office Manager Dashboard
+- Client Portal UI
+- Custom Theme
+
+## Tech Stack
+
+- ERPNext 16
 - Frappe Framework
 - Python
-- MariaDB
+- CSS / JS
+
+## Installation
+
+bench get-app https://github.com/alhaditraining/erpnext_law_ui
+
+bench --site yoursite install-app erpnext_law_ui
