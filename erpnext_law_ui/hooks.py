@@ -101,6 +101,8 @@ app_license = "mit"
 
 # before_app_install = "erpnext_law_ui.utils.before_app_install"
 # after_app_install = "erpnext_law_ui.utils.after_app_install"
+# هذا السطر يخبر فرابيه أن يستخدم ملفك بدلاً من الافتراضي
+#base_template = "erpnext_law_ui/templates/login.html"
 
 # Integration Cleanup
 # -------------------
@@ -249,4 +251,26 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
+app_name = "erpnext_law_ui"
+app_title = "Erpnext Law UI"
+app_publisher = "alhadi"
+app_description = "UI"
+app_email = "haider@alhadi.co"
+app_license = "mit"
 
+# ربط ملف الـ CSS بصفحة تسجيل الدخول
+# ---------------------------------
+app_include_css = "/assets/erpnext_law_ui/css/login.css"
+
+# إخبار النظام باستخدام قالب صفحة الدخول الخاص بك
+# ---------------------------------------------
+#base_template = "erpnext_law_ui/templates/login.html"
+
+# الأصول (Assets)
+# ------------------
+# لضمان تحميل الملفات بشكل صحيح في المتصفح
+app_include_js = "/assets/erpnext_law_ui/js/erpnext_law_ui.js"
+web_include_css = "/assets/erpnext_law_ui/css/login.css"
+website_context = {
+    "base_template": "erpnext_law_ui/www/login.html"
+}

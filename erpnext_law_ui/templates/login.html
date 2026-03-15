@@ -1,0 +1,16 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+<div class="law-login-header" dir="rtl" style="text-align: center; padding-top: 40px; padding-bottom: 20px;">
+    <div style="font-size: 60px;">⚖️</div>
+    <h1 style="font-family: Arial, sans-serif; color: #333;">نظام إدارة مكتب المحاماة</h1>
+    <h4 style="color: #666;">Law Office Management System</h4>
+</div>
+
+<hr style="max-width: 400px; margin: 20px auto;">
+
+<div class="login-form-wrapper" style="max-width: 400px; margin: 0 auto; padding: 20px;">
+    {% include "frappe/templates/includes/login/login.html" %}
+</div>
+
+{% endblock %}
