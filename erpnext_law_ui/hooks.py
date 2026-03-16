@@ -4,6 +4,8 @@ app_publisher = "Al-Hadi Software Co."
 app_description = "نظام احترافي لإدارة القضايا والموكلين"
 app_email = "haider@alhadi.co"
 app_license = "mit"
+app_logo_url = "/assets/erpnext_law_ui/images/law_logo.svg"
+splash_screen_logo = "/assets/erpnext_law_ui/images/law_logo.svg"
 app_favicon = "/assets/erpnext_law_ui/images/law_favicon.svg"
 
 # Apps
@@ -264,6 +266,6 @@ website_context = {
 }
 
 user_navbar_items = [
+    {"label": "موقع شركة الهادي", "target": "https://al-hadi.co", "standard": 1},
     {"label": "دعم شركة الهادي", "target": "https://al-hadi.co/support", "standard": 1},
-    {"label": "عن النظام", "route": "/law-about", "standard": 1}
 ]

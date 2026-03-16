@@ -1,6 +1,36 @@
-.navbar {
+/* فرض اللون الأسود والذهبي على الناف بار في كل الصفحات */
+.navbar,
+.header-navbar,
+.navbar-default {
     background-color: #111 !important;
     border-bottom: 2px solid #d4af37 !important;
+}
+
+/* توحيد ألوان النصوص والأيقونات في الناف بار */
+.navbar .navbar-nav > li > a,
+.navbar .breadcrumb-item a,
+.navbar .breadcrumb-item::before {
+    color: #d4af37 !important;
+}
+
+/* إخفاء روابط Frappe و About و Support بشكل قاطع */
+/* استهداف القائمة المنسدلة في الناف بار وفي القائمة الجانبية (Sidebar) */
+[data-label="Frappe Support"],
+[data-label="About"],
+[data-label="Documentation"],
+[data-label="System Health"],
+.dropdown-menu [data-label="About"],
+.sidebar-menu-item [data-label="About"] {
+    display: none !important;
+}
+
+/* تخصيص شاشة التحميل (Preloader) */
+#loading-screen {
+    background-color: #111 !important;
+}
+
+#loading-screen img {
+    filter: drop-shadow(0 0 8px #d4af37);
 }
 
 .btn-primary {
@@ -22,10 +52,4 @@
     border: 1px solid #d4af37 !important;
     border-radius: 10px !important;
     overflow: hidden;
-}
-
-li[data-label="Frappe Support"],
-li[data-label="About"],
-li[data-label="Documentation"] {
-    display: none !important;
 }

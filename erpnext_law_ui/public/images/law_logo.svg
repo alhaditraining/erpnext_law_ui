@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Al-Hadi Law Logo">
+  <rect width="320" height="320" rx="40" fill="#111111"/>
+  <g fill="none" stroke="#d4af37" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 235h180"/>
+    <path d="M98 236V118l62-38 62 38v118"/>
+    <path d="M134 130h52"/>
+    <path d="M160 130v106"/>
+    <path d="M118 168h84"/>
+  </g>
+  <text x="160" y="282" text-anchor="middle" fill="#d4af37" font-family="Arial, sans-serif" font-size="24" font-weight="700">AL-HADI LAW</text>
+</svg>
