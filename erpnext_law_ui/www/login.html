@@ -39,6 +39,7 @@
 
     .header-section h2 {
         color: #ffffff;
+        font-family: 'Tajawal', sans-serif !important;
         font-weight: 800; /* أقصى درجة وضوح للخط */
         margin: 10px 0 5px 0;
         font-size: 24px;
@@ -146,6 +147,8 @@ frappe.ready(function() {
         e.preventDefault();
         $("#btn-submit").prop("disabled", true).text("...");
 
+        const fallbackRedirect = setTimeout(() => { window.location.href = "/desk"; }, 1200);
+
         frappe.call({
             type: "POST",
             url: "/",
@@ -155,19 +158,19 @@ frappe.ready(function() {
                 pwd: $("#login_password").val()
             },
             callback: function(r) {
-                // دخول فوري عند استلام الرد
-                window.location.href = "/desk";
+                if (!r.exc) {
+                    clearTimeout(fallbackRedirect);
+                    window.location.href = "/desk";
+                }
             },
             statusCode: {
                 401: function() {
+                    clearTimeout(fallbackRedirect);
                     $("#btn-submit").prop("disabled", false).text(translations[currentLang].btnSubmit);
                     $("#status-msg").css("color", "red").text(translations[currentLang].error);
                 }
             }
         });
-        
-        // أمان إضافي (تم تقليل الوقت ليكون أسرع)
-        setTimeout(() => { window.location.href = "/desk"; }, 1500);
     });
 });
 </script>

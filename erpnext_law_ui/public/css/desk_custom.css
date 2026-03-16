@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #111 !important;
+    border-bottom: 2px solid #d4af37 !important;
+}
+
+.btn-primary {
+    background-color: #111 !important;
+    border-color: #d4af37 !important;
+    color: #d4af37 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #d4af37 !important;
+    border-color: #111 !important;
+    color: #111 !important;
+}
+
+.navbar .dropdown-menu,
+.standard-sidebar .dropdown-menu {
+    border: 1px solid #d4af37 !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+li[data-label="Frappe Support"],
+li[data-label="About"],
+li[data-label="Documentation"] {
+    display: none !important;
+}
