@@ -1,9 +1,10 @@
 app_name = "erpnext_law_ui"
-app_title = "UI"
-app_publisher = "alhadi"
-app_description = "UI"
-app_email = "haider@alhad.co"
+app_title = "نظام مكتب المحاماة"
+app_publisher = "Al-Hadi Software Co."
+app_description = "نظام احترافي لإدارة القضايا والموكلين"
+app_email = "haider@alhadi.co"
 app_license = "mit"
+app_favicon = "/assets/erpnext_law_ui/images/law_favicon.svg"
 
 # Apps
 # ------------------
@@ -25,11 +26,13 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/erpnext_law_ui/css/erpnext_law_ui.css"
-# app_include_js = "/assets/erpnext_law_ui/js/erpnext_law_ui.js"
+app_include_css = [
+    "/assets/erpnext_law_ui/css/login.css",
+    "/assets/erpnext_law_ui/css/desk_custom.css",
+]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/erpnext_law_ui/css/erpnext_law_ui.css"
+web_include_css = "/assets/erpnext_law_ui/css/login.css"
 # web_include_js = "/assets/erpnext_law_ui/js/erpnext_law_ui.js"
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -251,26 +254,16 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-app_name = "erpnext_law_ui"
-app_title = "Erpnext Law UI"
-app_publisher = "alhadi"
-app_description = "UI"
-app_email = "haider@alhadi.co"
-app_license = "mit"
-
-# ربط ملف الـ CSS بصفحة تسجيل الدخول
-# ---------------------------------
-app_include_css = "/assets/erpnext_law_ui/css/login.css"
-
-# إخبار النظام باستخدام قالب صفحة الدخول الخاص بك
-# ---------------------------------------------
-#base_template = "erpnext_law_ui/templates/login.html"
 
 # الأصول (Assets)
 # ------------------
 # لضمان تحميل الملفات بشكل صحيح في المتصفح
 app_include_js = "/assets/erpnext_law_ui/js/erpnext_law_ui.js"
-web_include_css = "/assets/erpnext_law_ui/css/login.css"
 website_context = {
     "base_template": "erpnext_law_ui/www/login.html"
 }
+
+user_navbar_items = [
+    {"label": "دعم شركة الهادي", "target": "https://al-hadi.co/support", "standard": 1},
+    {"label": "عن النظام", "route": "/law-about", "standard": 1}
+]
